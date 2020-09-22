@@ -8,32 +8,56 @@
 import SwiftUI
 
 struct ContentView: View {
-    let countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
-    var correctAnswer = Int.random(in: 0...2)
-    @State private var showingAlert = false
+    @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+    @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var showingScore = false
+    @State private var scoreTitle = ""
+    @State private var score = 0
     
     var body: some View {
-        
         ZStack {
             Color.blue.edgesIgnoringSafeArea(.all)
             VStack(spacing: 30) {
                 VStack {
                     Text("Tap the flag of")
                         .foregroundColor(.white)
+                    Text(countries[correctAnswer])
+                        .foregroundColor(.white)
                 }
                 
                 ForEach(0..<3) { number in
                     Button(action: {
-                        //flag was tapped
+                        self.flagTapped(number)
                     }){
                         Image(self.countries[number]).renderingMode(.original)
                     }
                 }
-                
                 Spacer()
             }
+        }.alert(isPresented: $showingScore) {
+            Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
+                self.askQuestion()
+            })
         }
     }
+    
+    func flagTapped(_ number: Int) {
+        if number == correctAnswer {
+          scoreTitle = "Correct"
+            self.score += 1
+        } else {
+            scoreTitle = "Wrong"
+        }
+        
+        showingScore = true
+    }
+    
+    func askQuestion() {
+        countries.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
