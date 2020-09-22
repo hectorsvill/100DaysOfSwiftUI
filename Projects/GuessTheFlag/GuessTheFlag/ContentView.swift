@@ -15,34 +15,36 @@ struct ContentView: View {
     @State private var score = 0
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom)
-                
-                VStack(spacing: 30) {
-                    VStack {
-                        Text("Tap the flag of")
-                            .foregroundColor(.white).font(.caption).fontWeight(.medium)
-                        Text(countries[correctAnswer])
-                            .foregroundColor(.white).font(.largeTitle).fontWeight(.heavy)
-                    }
-                    
-                    ForEach(0..<3) { number in
-                        Button(action: {
-                            self.flagTapped(number)
-                        }){
-                            Image(self.countries[number]).renderingMode(.original)
-                        }
-                    }
-                    Spacer()
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom)
+            
+            VStack(spacing: 30) {
+                VStack {
+                    Text("Tap the flag of")
+                        .foregroundColor(.white).font(.caption).fontWeight(.medium)
+                    Text(countries[correctAnswer])
+                        .foregroundColor(.white).font(.largeTitle).fontWeight(.heavy)
                 }
-            }.alert(isPresented: $showingScore) {
-                Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
-                    self.askQuestion()
-                })
+                
+                ForEach(0..<3) { number in
+                    Button(action: {
+                        self.flagTapped(number)
+                    }){
+                        Image(self.countries[number])
+                            .renderingMode(.original).clipShape(Capsule())
+                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+                            .shadow(color: .black, radius:2)
+                    }
+                }
+                Spacer()
             }
-            .navigationTitle("Guess The flag")
+        }.alert(isPresented: $showingScore) {
+            Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
+                self.askQuestion()
+            })
         }
+        
+           
         
     }
     
