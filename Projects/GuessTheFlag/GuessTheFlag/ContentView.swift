@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingAlert = false
+    
     var body: some View {
-        Button(action:{
-            print("Tapped on Lungs")
-        }){
-            HStack(spacing: 10){
-                Image(systemName: "lungs")
-                Text("Lungs")
-            }
-        }
+        Button("Show Alert"){
+            self.showingAlert.toggle()
+        }.alert(isPresented: $showingAlert, content: {
+            Alert(title: Text("title"), message: Text("Alert Message"), dismissButton: .default(Text("OK")))
+        })
     }
 }
 
