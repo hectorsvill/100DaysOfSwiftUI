@@ -10,11 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.green.edgesIgnoringSafeArea(.all)
-            Text("626")
+//            let gradient = Gradient(colors: [.blue, .black])
+            let gradient = Gradient(colors: [.red, .green, .blue, .yellow, .orange, .pink])
+//            LinearGradient(gradient: gradient, startPoint: .bottom, endPoint: .top)
+//            RadialGradient(gradient: gradient, center: .center, startRadius: 10, endRadius: 100)
+            AngularGradient(gradient: gradient, center: .center)
+            
         }
-        
-        
     }
 }
 
