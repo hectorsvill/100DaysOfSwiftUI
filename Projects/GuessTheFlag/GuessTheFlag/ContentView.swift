@@ -15,30 +15,35 @@ struct ContentView: View {
     @State private var score = 0
     
     var body: some View {
-        ZStack {
-            Color.blue.edgesIgnoringSafeArea(.all)
-            VStack(spacing: 30) {
-                VStack {
-                    Text("Tap the flag of")
-                        .foregroundColor(.white)
-                    Text(countries[correctAnswer])
-                        .foregroundColor(.white)
-                }
+        NavigationView {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom)
                 
-                ForEach(0..<3) { number in
-                    Button(action: {
-                        self.flagTapped(number)
-                    }){
-                        Image(self.countries[number]).renderingMode(.original)
+                VStack(spacing: 30) {
+                    VStack {
+                        Text("Tap the flag of")
+                            .foregroundColor(.white).font(.caption).fontWeight(.medium)
+                        Text(countries[correctAnswer])
+                            .foregroundColor(.white).font(.largeTitle).fontWeight(.heavy)
                     }
+                    
+                    ForEach(0..<3) { number in
+                        Button(action: {
+                            self.flagTapped(number)
+                        }){
+                            Image(self.countries[number]).renderingMode(.original)
+                        }
+                    }
+                    Spacer()
                 }
-                Spacer()
+            }.alert(isPresented: $showingScore) {
+                Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
+                    self.askQuestion()
+                })
             }
-        }.alert(isPresented: $showingScore) {
-            Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
-                self.askQuestion()
-            })
+            .navigationTitle("Guess The flag")
         }
+        
     }
     
     func flagTapped(_ number: Int) {
