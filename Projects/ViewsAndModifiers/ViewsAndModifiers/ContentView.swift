@@ -12,11 +12,22 @@ struct ContentView: View {
     @State private var useGreenText = false
     
     var body: some View {
-        Button("Hello World") {
-            print("button: \(type(of: self.body))")
-            self.useGreenText.toggle()
-        }
-        .foregroundColor(useGreenText ? Color.green : Color.blue)
+        
+        VStack {
+            Text("Hector")
+            Text("Steven")
+                .font(.body)
+            Text("Villasano")
+        }.font(.largeTitle)
+        
+//        .blur(radius: 1)
+        
+        
+//        Button("Hello World") {
+//            print("button: \(type(of: self.body))")
+//            self.useGreenText.toggle()
+//        }
+//        .foregroundColor(useGreenText ? Color.green : Color.blue)
         
 //        Text("This is Hector")
 //            .padding()
