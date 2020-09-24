@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var useGreenText = false
+    
     var body: some View {
-//        Button("Hello World") {
-//            print("button: \(type(of: self.body))")
-//        }
-//        .frame(width: 200, height: 200)
-//        .background(Color.green)
+        Button("Hello World") {
+            print("button: \(type(of: self.body))")
+            self.useGreenText.toggle()
+        }
+        .foregroundColor(useGreenText ? Color.green : Color.blue)
         
-        Text("This is Hector")
-            .padding()
-            .background(Color.red)
-            .padding()
-            .background(Color.green)
-            .padding()
-            .background(Color.blue)
-            .padding()
-            .background(Color.black)
+//        Text("This is Hector")
+//            .padding()
+//            .background(Color.red)
+//            .padding()
+//            .background(Color.green)
+//            .padding()
+//            .background(Color.blue)
+//            .padding()
+//            .background(Color.black)
     }
 }
 
