@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+struct CapsuleText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.largeTitle)
+            .padding()
+            .background(Color.blue)
+            .clipShape(Capsule())
+    }
+}
+
+
 struct ContentView: View {
     
 //    @State private var useGreenText = false
@@ -19,28 +32,10 @@ struct ContentView: View {
         VStack {
             firstName
                 .foregroundColor(.green)
-            Text("Steven")
-                .font(.body)
-            Text("Villasano")
-        }.font(.largeTitle)
-//        .blur(radius: 1)
-        
-//        Button("Hello World") {
-//            print("button: \(type(of: self.body))")
-//            self.useGreenText.toggle()
-//        }
-//        .foregroundColor(useGreenText ? Color.green : Color.blue)
-        
-//        Text("This is Hector")
-//            .padding()
-//            .background(Color.red)
-//            .padding()
-//            .background(Color.green)
-//            .padding()
-//            .background(Color.blue)
-//            .padding()
-//            .background(Color.black)
-    }
+            CapsuleText(text: "Steven")
+                .foregroundColor(.white)
+            CapsuleText(text: "Villasano")
+        }.font(.largeTitle)    }
 }
 
 struct ContentView_Previews: PreviewProvider {
