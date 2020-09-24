@@ -9,19 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var useGreenText = false
+//    @State private var useGreenText = false
+    
+    var firstName: some View {
+        Text("Hector")
+    }
     
     var body: some View {
-        
         VStack {
-            Text("Hector")
+            firstName
+                .foregroundColor(.green)
             Text("Steven")
                 .font(.body)
             Text("Villasano")
         }.font(.largeTitle)
-        
 //        .blur(radius: 1)
-        
         
 //        Button("Hello World") {
 //            print("button: \(type(of: self.body))")
