@@ -11,7 +11,6 @@ import SwiftUI
 struct SwiftUILifeCycleApp: App {
     //app delegate adapter
     @UIApplicationDelegateAdaptor(MyAppDelegate.self) var appDelegate
-    
     // monitor scene phase
     @Environment(\.scenePhase) var scenePhase
     

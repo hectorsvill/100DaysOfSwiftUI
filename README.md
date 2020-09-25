@@ -14,3 +14,9 @@
 
 - [Views and modifiers](https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-introduction)
 - Technique project: 
+
+## YT Tutorials
+
+- [SwiftUILifeCycle](https://www.youtube.com/watch?v=y4_YXovq1L8)
+- UIApplicationDelegateAdaptor and Environment scene phase
+- Access the app delegate and scene delegate from main struct 
