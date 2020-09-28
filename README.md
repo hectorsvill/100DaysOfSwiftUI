@@ -3,17 +3,24 @@
 #
 ##### Project 1
 - [WeSplit](https://www.hackingwithswift.com/books/ios-swiftui/wesplit-introduction)
--  Check-splitting app
+    -  Check-splitting app
 
 ##### Project 2
 - [Guess the Flag](https://www.hackingwithswift.com/books/ios-swiftui/guess-the-flag-introduction)
-- Flag Guessing Game
+    - Flag Guessing Game
 
 
 ##### Project 3
 
 - [Views and modifiers](https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-introduction)
-- Technique project: 
+    - Technique project: 
+
+
+##### Project 4
+- [Better Reset](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
+    - Let coffe drinkers know when is the best time to go to sleep using Core ML to make predictions
+
+
 
 ## YT Tutorials
 
