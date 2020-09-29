@@ -17,7 +17,7 @@
 
 
 ##### Project 4
-- [Better Reset](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
+- [Better Rest](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
     - Let coffe drinkers know when is the best time to go to sleep using Core ML to make predictions
 
 
