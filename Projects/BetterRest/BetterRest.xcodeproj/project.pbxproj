@@ -13,6 +13,7 @@
 		3B0C4EFD252177280021BCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C4EFC252177280021BCAF /* Assets.xcassets */; };
 		3B0C4F00252177280021BCAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C4EFF252177280021BCAF /* Preview Assets.xcassets */; };
 		3B0C4F03252177280021BCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C4F01252177280021BCAF /* LaunchScreen.storyboard */; };
+		3B8358062523030D00BA13CF /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B8358052523030C00BA13CF /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B0C4EFF252177280021BCAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B0C4F02252177280021BCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0C4F04252177280021BCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8358052523030C00BA13CF /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				3B0C4EFC252177280021BCAF /* Assets.xcassets */,
 				3B0C4F01252177280021BCAF /* LaunchScreen.storyboard */,
 				3B0C4F04252177280021BCAF /* Info.plist */,
+				3B8358052523030C00BA13CF /* SleepCalculator.mlmodel */,
 				3B0C4EFE252177280021BCAF /* Preview Content */,
 			);
 			path = BetterRest;
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0C4EF7252177270021BCAF /* AppDelegate.swift in Sources */,
+				3B8358062523030D00BA13CF /* SleepCalculator.mlmodel in Sources */,
 				3B0C4EF9252177270021BCAF /* SceneDelegate.swift in Sources */,
 				3B0C4EFB252177270021BCAF /* ContentView.swift in Sources */,
 			);
