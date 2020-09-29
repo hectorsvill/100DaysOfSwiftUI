@@ -18,7 +18,7 @@
 
 ##### Project 4
 - [Better Rest](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
-    - Let coffe drinkers know when is the best time to go to sleep using Core ML to make predictions
+    - Let coffe drinkers know when is the best time to go to sleep using [Core ML](https://developer.apple.com/documentation/coreml) to make predictions
 
 
 
