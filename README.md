@@ -14,7 +14,7 @@
     - Technique project: 
 
 ##### Project 4: [Better Rest](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
-- [Better Rest](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/ViewsAndModifiers/ViewsAndModifiers/ContentView.swift)
+- [Better Rest](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/BetterRest/BetterRest/ContentView.swift)
     - Let coffe drinkers know when is the best time to go to sleep using [Core ML](https://developer.apple.com/documentation/coreml) to make predictions
 
 ##### Project 5: [Word Scramble](https://www.hackingwithswift.com/books/ios-swiftui/word-scramble-introduction)
@@ -24,7 +24,9 @@
 
 ## YT Tutorials
 
+Tutorials on SwiftUI from youtube
+
 #### [SwiftUILifeCycle](https://www.youtube.com/watch?v=y4_YXovq1L8)
 - [SwiftUILifeCycle](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/SwiftUILifeCycle)
-- UIApplicationDelegateAdaptor and Environment scene phase
-- Access the app delegate and scene delegate from main struct 
+    - UIApplicationDelegateAdaptor and Environment scene phase
+    - Access the app delegate and scene delegate from main struct 
