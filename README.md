@@ -11,7 +11,7 @@
 
 ##### Project 3: [Views and modifiers](https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-introduction)
 - [Views and modifiers](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/ViewsAndModifiers/ViewsAndModifiers/ContentView.swift)
-    - Technique project: 
+    - Technique project: Close look at views and modifies
 
 ##### Project 4: [Better Rest](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
 - [Better Rest](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/BetterRest/BetterRest/ContentView.swift)
@@ -22,10 +22,15 @@
     - The game will show players a random eight-letter word, and ask them to make words out of it. 
     - List, onAppear(), Bundle
 
-## YT Tutorials
+##### Project 6: [Animation](https://www.hackingwithswift.com/books/ios-swiftui/animation-introduction)
+ - [Animation]()
+    -Technique Project: Animation and transition with Swift UI
 
+
+#
+# YT Tutorials
 Tutorials on SwiftUI from youtube
-
+#
 #### [SwiftUILifeCycle](https://www.youtube.com/watch?v=y4_YXovq1L8)
 - [SwiftUILifeCycle](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/SwiftUILifeCycle)
     - UIApplicationDelegateAdaptor and Environment scene phase
