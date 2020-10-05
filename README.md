@@ -11,7 +11,8 @@
 
 ##### Project 3: [Views and modifiers](https://www.hackingwithswift.com/books/ios-swiftui/views-and-modifiers-introduction)
 - [Views and modifiers](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/ViewsAndModifiers/ViewsAndModifiers/ContentView.swift)
-    - Technique project: Close look at views and modifies
+    - Technique project
+        - Close look at views and modifies
 
 ##### Project 4: [Better Rest](https://www.hackingwithswift.com/books/ios-swiftui/betterrest-introduction)
 - [Better Rest](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/BetterRest/BetterRest/ContentView.swift)
@@ -23,8 +24,8 @@
     - List, onAppear(), Bundle
 
 ##### Project 6: [Animation](https://www.hackingwithswift.com/books/ios-swiftui/animation-introduction)
- - [Animation]()
-    -Technique Project: Animation and transition with Swift UI
+ - [Animation](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/Animations/Animations/ContentView.swift)
+    - Technique Project: Animation and transition with SwiftUI
 
 
 #
