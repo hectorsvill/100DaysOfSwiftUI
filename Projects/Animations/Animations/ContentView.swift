@@ -7,6 +7,28 @@
 
 import SwiftUI
 
+
+struct ContentView: View {
+    @State private var animationAmount = 0.0
+    
+    
+    var body: some View {
+        Button("Tap Me") {
+            withAnimation(.interpolatingSpring(stiffness: 3, damping: 1)) {
+                animationAmount += 360
+            }
+        }
+        .padding(50)
+        .background(Color.green)
+        .foregroundColor(.white)
+        .clipShape(Circle())
+        .rotation3DEffect(
+            .degrees(animationAmount), axis: (x: 0.5, y: 1.0, z: 0.1)
+        )
+    }
+}
+
+/*
 struct ContentView: View {
     @State private var animationAmount: CGFloat = 1
     
@@ -29,7 +51,7 @@ struct ContentView: View {
     }
     
 }
-
+*/
 /*
 struct ContentView: View {
     @State private var animationAmount: CGFloat = 1
