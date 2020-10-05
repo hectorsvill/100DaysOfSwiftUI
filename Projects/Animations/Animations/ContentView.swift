@@ -7,7 +7,32 @@
 
 import SwiftUI
 
+// Showing and hiding views with transitions
 
+struct ContentView: View {
+    @State private var isShowingRed = false
+    
+    var body: some View {
+        VStack {
+            Button("Tap") {
+                withAnimation {
+                    isShowingRed.toggle()
+                }
+            }
+            
+            
+            if isShowingRed {
+                Rectangle()
+                    .fill(Color.green)
+                    .frame(width: 200, height: 200)
+//                    .transition(.scale)
+                    .transition(.asymmetric(insertion: .slide, removal: .slide))
+            }
+        }
+    }
+}
+
+/*
 // animating gestues
 struct ContentView: View {
     let letters = Array("Hello SwiftUI")
@@ -41,7 +66,7 @@ struct ContentView: View {
     }
 }
 
-
+*/
 /*
  //touch drag animation
 struct ContentView: View {
