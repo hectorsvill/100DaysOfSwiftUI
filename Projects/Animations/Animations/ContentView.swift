@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CornerRotateMidifier: ViewModifier {
+struct CornerRotateModifier: ViewModifier {
     let amount: Double
     let anchor: UnitPoint
     
@@ -20,7 +20,10 @@ struct CornerRotateMidifier: ViewModifier {
 
 extension AnyTransition {
     static var pivot: AnyTransition {
-        .modifier(active: CornerRotateMidifier(amount: -90, anchor: .topLeading), identity: CornerRotateMidifier(amount: 0, anchor: .topLeading))
+        .modifier(
+            active: CornerRotateModifier(amount: -90, anchor: .topLeading),
+            identity: CornerRotateModifier(amount: 0, anchor: .topLeading)
+        )
     }
 }
 
@@ -34,7 +37,6 @@ struct ContentView: View {
                     isShowingRed.toggle()
                 }
             }
-            
             
             if isShowingRed {
                 Rectangle()
