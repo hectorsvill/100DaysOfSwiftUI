@@ -7,6 +7,67 @@
 
 import SwiftUI
 
+
+// animating gestues
+struct ContentView: View {
+    let letters = Array("Hello SwiftUI")
+    @State private var enabled = false
+    @State private var dragAmount = CGSize.zero
+    
+    var body: some View {
+        HStack(spacing: 0) {
+            ForEach(0..<letters.count) { num in
+                Text(String(letters[num]))
+                    .padding(5)
+                    .font(.title)
+                    .background(enabled ? Color.green : Color.yellow)
+                    .offset(dragAmount)
+                    .animation(
+                        Animation.default.delay(Double(num) / 20)
+                    )
+                
+            }
+        }
+        .gesture(
+            DragGesture()
+                .onChanged { 
+                    dragAmount = $0.translation
+                }
+                .onEnded { _ in
+                    dragAmount = .zero
+                    self.enabled.toggle()
+                }
+        )
+    }
+}
+
+
+/*
+ //touch drag animation
+struct ContentView: View {
+    let gradientColors = Gradient(colors: [.green, .yellow])
+    @State private var dragAmount = CGSize.zero
+
+    var body: some View {
+        LinearGradient(gradient: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing)
+            .frame(width: 300, height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .offset(dragAmount)
+            .gesture(
+                DragGesture()
+                    .onChanged {
+                        dragAmount = $0.translation
+                    }
+                    .onEnded { _ in
+                        withAnimation(.spring()) {
+                            dragAmount = .zero
+                        }
+                    }
+            )
+    }
+}
+*/
+/*
 struct ContentView: View {
     @State private var enabled = false
     
@@ -23,7 +84,7 @@ struct ContentView: View {
         .animation(.interpolatingSpring(stiffness: 10, damping: 1))
     }
 }
-
+*/
 
 /*
 struct ContentView: View {
