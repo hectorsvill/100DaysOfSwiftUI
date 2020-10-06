@@ -28,9 +28,9 @@
     - Technique Project: Animation and transition with SwiftUI
 
 ##### Project 7: [iExpense](https://www.hackingwithswift.com/books/ios-swiftui/iexpense-introduction)
-- [iExpense]()
+- [iExpense](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/iExpense/iExpense)
     - Expense tracker that separates personal costs from business costs
-
+    - Review ObservableObject, Published, ObservedObject, and  @Environment(\.presentationMode)
 #
 # YT Tutorials
 
