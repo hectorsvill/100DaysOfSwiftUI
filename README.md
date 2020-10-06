@@ -27,6 +27,9 @@
  - [Animation](https://github.com/hectorsvill/100DaysOfSwiftUI/blob/master/Projects/Animations/Animations/ContentView.swift)
     - Technique Project: Animation and transition with SwiftUI
 
+##### Project 7: [iExpense](https://www.hackingwithswift.com/books/ios-swiftui/iexpense-introduction)
+- [iExpense]()
+    - Expense tracker that separates personal costs from business costs
 
 #
 # YT Tutorials
