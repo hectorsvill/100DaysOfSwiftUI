@@ -9,6 +9,42 @@
 import SwiftUI
 
 
+
+// Deleteing items using onDelete()
+
+struct ContentView4: View {
+    @State private var number = [Int]()
+    @State private var currentNumber = 1
+    
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(number, id: \.self) {
+                        Text("\($0)")
+                    }
+                    .onDelete(perform:  removeRows)
+                }
+                
+                Button("Add Number") {
+                    number.append(currentNumber)
+                    currentNumber += 1
+                }
+            }
+            .navigationBarItems(leading: EditButton())
+        }
+    }
+    
+    func removeRows(at offSet: IndexSet) {
+        number.remove(atOffsets: offSet)
+    }
+    
+}
+
+
+
+
 // Showing and hiding Views
 
 struct SecondView: View {
@@ -61,6 +97,6 @@ struct ContentView2: View {
 
 struct ContentView2_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView2()
+        ContentView4()
     }
 }
