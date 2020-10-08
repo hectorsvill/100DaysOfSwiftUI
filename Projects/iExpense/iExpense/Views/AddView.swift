@@ -15,6 +15,8 @@ struct AddView: View {
     @State private var amount = ""
     static let type = ["Business", "Personal"]
     
+    @State private var alerIspresented = false
+    
     var body: some View {
         NavigationView {
             Form {
@@ -31,6 +33,9 @@ struct AddView: View {
       
                 
             }
+            .alert(isPresented: $alerIspresented){
+                Alert(title: Text("Error With Amount"), message: Text("Please use a valid Dollar amount"), dismissButton: .default(Text("OK")))
+            }
             .navigationTitle("Add New Expense")
             .navigationBarItems(trailing: Button("Save"){
                 if let actualAmout = Int(amount) {
@@ -38,7 +43,7 @@ struct AddView: View {
                     self.expenses.items.append(item)
                     self.presentaionMode.wrappedValue.dismiss()
                 } else {
-                    
+                    alerIspresented.toggle()
                 }
             })
         }

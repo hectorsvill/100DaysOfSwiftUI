@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var expenses = Expenses()
-    
     @State private var showingAddExpenese = false
     
     var body: some View {
@@ -31,8 +30,7 @@ struct ContentView: View {
                 .onDelete(perform: removeItems)
             }
             .navigationBarTitle("iExpense")
-//            .navigationBarItems(leading: EditButton())
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(leading: EditButton(), trailing: Button(action: {
                 showingAddExpenese = true
             }){
                 Image(systemName: "plus")
