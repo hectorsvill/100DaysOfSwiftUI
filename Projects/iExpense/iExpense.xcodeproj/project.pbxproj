@@ -12,6 +12,7 @@
 		3BA5F6E3252D1CEF003D896E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5F6E2252D1CEF003D896E /* Assets.xcassets */; };
 		3BA5F6E6252D1CEF003D896E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5F6E5252D1CEF003D896E /* Preview Assets.xcassets */; };
 		3BA5F6EF252D2E18003D896E /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5F6EE252D2E18003D896E /* ContentView2.swift */; };
+		3BADE62F252EB4AB00FD3D5A /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BADE62E252EB4AB00FD3D5A /* ExpenseItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3BA5F6E5252D1CEF003D896E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BA5F6E7252D1CEF003D896E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA5F6EE252D2E18003D896E /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		3BADE62E252EB4AB00FD3D5A /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				3BA5F6DE252D1CED003D896E /* iExpenseApp.swift */,
+				3BADE62E252EB4AB00FD3D5A /* ExpenseItem.swift */,
 				3BA5F6E0252D1CED003D896E /* ContentView.swift */,
 				3BA5F6EE252D2E18003D896E /* ContentView2.swift */,
 				3BA5F6E2252D1CEF003D896E /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				3BA5F6EF252D2E18003D896E /* ContentView2.swift in Sources */,
 				3BA5F6E1252D1CED003D896E /* ContentView.swift in Sources */,
 				3BA5F6DF252D1CED003D896E /* iExpenseApp.swift in Sources */,
+				3BADE62F252EB4AB00FD3D5A /* ExpenseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

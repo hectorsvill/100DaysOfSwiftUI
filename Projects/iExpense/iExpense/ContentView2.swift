@@ -9,6 +9,21 @@
 import SwiftUI
 
 
+// Storing user settings with UserDefaults
+
+struct ContentView5: View {
+    @State private var tapCount = UserDefaults.standard.integer(forKey: "Tap")
+    
+    var body: some View {
+        Button("Tap Count: \(tapCount)") {
+            tapCount += 1
+            UserDefaults.standard.set(tapCount, forKey: "Tap")
+        }
+    }
+    
+}
+
+
 
 // Deleteing items using onDelete()
 
@@ -76,13 +91,13 @@ struct ContentView3: View {
 }
 
 // Sharing SwiftUI state with @ObservedObject
-class User: ObservableObject {
+class User2: ObservableObject {
     @Published var firstName = "Hector"
     @Published var lastName = "Villa"
 }
 
 struct ContentView2: View {
-    @ObservedObject private var user = User()
+    @ObservedObject private var user = User2()
     
     var body: some View {
         VStack {
