@@ -19,6 +19,11 @@ class Expenses: ObservableObject {
         didSet { encodeItems() }
     }
     
+    init() {
+        decodeItems()
+    }
+    
+    
     private func encodeItems() {
         if let encodedItems = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encodedItems,forKey: "Items")
