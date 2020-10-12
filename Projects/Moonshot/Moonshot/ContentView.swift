@@ -7,28 +7,17 @@
 
 import SwiftUI
 
-struct CustomText: View {
-    var text: String
-    
-    var body: some View {
-        Text(text)
-    }
-    
-    init(_ text: String) {
-        self.text = text
-    }
-}
-
 struct ContentView: View {
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(spacing: 10) {
-                ForEach(0..<100) {
-                    CustomText("Item \($0)")
-                        .font(.title)
+        NavigationView {
+            VStack {
+                List(0..<116) { row in
+                    NavigationLink(destination: Text("\(row).Detail View")) {
+                        Text("\(row).Hello World")
+                    }
                 }
             }
-            .frame(maxWidth: .infinity)
+            .navigationBarTitle("SwiftUI")
         }
     }
 }
