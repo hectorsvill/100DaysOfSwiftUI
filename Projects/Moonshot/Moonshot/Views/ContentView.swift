@@ -12,7 +12,25 @@ struct ContentView: View {
     let mission: [Mission] = Bundle.main.decode(.missions)
     
     var body: some View {
-        Text("\(astronuts.count), \(mission.count)")
+        NavigationView {
+            List(mission) { mission in
+                NavigationLink(destination: Text("Destination View")) {
+                    Image(mission.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 44, height: 44)
+                    
+                    VStack(alignment: .leading) {
+                        Text(mission.displayName)
+                            .font(.headline)
+                        
+                        Text(mission.formattedLaunchDate)
+                    }
+                    
+                }
+            }
+            .navigationBarTitle("Moonshot")
+        }
         
     }
 }
