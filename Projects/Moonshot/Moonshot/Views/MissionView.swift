@@ -46,25 +46,30 @@ struct MissionView: View {
                         .padding()
                     
                     ForEach(self.astronauts, id: \.role) { crewMember in
-                        HStack {
-                            Image(crewMember.astronaut.id)
-                                .resizable()
-                                .frame(width: 83, height: 60)
-                                .clipShape(Capsule())
-                                .overlay(
-                                    Capsule()
-                                        .stroke(Color.primary, lineWidth: 1)
-                                )
-                            VStack(alignment: .leading) {
-                                Text(crewMember.astronaut.name)
-                                    .font(.headline)
-                                Text(crewMember.role)
-                                    .foregroundColor(.secondary)
+                        let astronautView = AstronautView(astronaut: crewMember.astronaut)
+                        
+                        NavigationLink(destination: astronautView) {
+                            HStack {
+                                Image(crewMember.astronaut.id)
+                                    .resizable()
+                                    .frame(width: 83, height: 60)
+                                    .clipShape(Capsule())
+                                    .overlay(
+                                        Capsule()
+                                            .stroke(Color.primary, lineWidth: 1)
+                                    )
+                                VStack(alignment: .leading) {
+                                    Text(crewMember.astronaut.name)
+                                        .font(.headline)
+                                    Text(crewMember.role)
+                                        .foregroundColor(.secondary)
+                                }
+                                
+                                Spacer()
                             }
-                            
-                            Spacer()
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
+                        .buttonStyle(PlainButtonStyle())
                     }
                     
                     Spacer(minLength: 25)
@@ -72,7 +77,6 @@ struct MissionView: View {
                 }
             }
         }
-        
         .navigationBarTitle(Text(mission.displayName), displayMode: .inline)
     }
 }
