@@ -9,10 +9,10 @@ import SwiftUI
 
 
 struct ContentView: View {
+    let astronuts = Bundle.main.decode("astronauts.json")
     
     var body: some View {
-        Button("Decode JSON") {
-        }
+        Text("\(astronuts.count)")
         
     }
 }
