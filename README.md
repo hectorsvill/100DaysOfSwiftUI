@@ -32,9 +32,11 @@
     - Expense tracker that separates personal costs from business costs
     - Review ObservableObject, Published, ObservedObject, and  @Environment(\.presentationMode)
 
-##### Project 8: [Moonshot]() 
-- [Moonshoot]()
--
+##### Project 8: [Moonshot](https://www.hackingwithswift.com/books/ios-swiftui/iexpense-introduction) 
+- [Moonshoot](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/Moonshot/Moonshot)
+    - Present and dismiss a second screen of data.
+    - Delete rows from a list
+    - Save and load user data
 #
 # YT Tutorials
 
