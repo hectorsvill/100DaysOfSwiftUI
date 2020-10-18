@@ -32,9 +32,23 @@ fileprivate struct Arc: InsettableShape {
 }
 
 struct ArcView: View {
+    @State private var startAngle: Double = -90
+    @State private var endAngle: Double = 90
     var body: some View {
-        Arc(startAngle: .degrees(0), endAngle: .degrees(90), clockwise: true)
-            .strokeBorder(Color.blue, lineWidth: 4)
+        VStack {
+            Arc(startAngle: .degrees(startAngle), endAngle: .degrees(endAngle), clockwise: true)
+                .strokeBorder(Color.blue, lineWidth: 4)
+            
+            Text("StartAngle")
+            Slider(value: $startAngle, in: -180...0)
+                
+            Text("EndAngle")
+            Slider(value: $endAngle, in: 0...180)
+        }
+        .animation(.easeOut)
+        
+        
+        
     }
 }
 

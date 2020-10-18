@@ -35,6 +35,7 @@ struct ContentView: View {
             Color.blue.opacity(0.1),
             style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
         )
+        .animation(.easeInOut)
         
     }
 }

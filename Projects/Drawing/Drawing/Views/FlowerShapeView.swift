@@ -59,6 +59,7 @@ struct FlowerShapeView: View {
             Slider(value: $petalWidth, in: 10...100)
                 .padding([.horizontal])
         }
+        .animation(.easeOut)
     }
 }
 

@@ -24,6 +24,7 @@ fileprivate struct ColorCyclingCircle: View {
             }
         }
         .drawingGroup()
+        .animation(.default)
     }
     
     func color(for value: Int, brightness: Double) -> Color {

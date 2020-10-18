@@ -39,6 +39,7 @@ struct TriangleView: View {
                     """)
             }
         }
+        .animation(.easeOut)
         
     }
 }
