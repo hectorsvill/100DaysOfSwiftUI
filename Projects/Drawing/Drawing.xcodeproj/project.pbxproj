@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B54D838253CBD15002926F8 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D837253CBD15002926F8 /* TriangleView.swift */; };
 		3B54D83E253CBDAE002926F8 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D83D253CBDAE002926F8 /* ArcView.swift */; };
+		3B54D841253CC702002926F8 /* FlowerShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D840253CC702002926F8 /* FlowerShapeView.swift */; };
 		3B8F50BF2538D2FC00D7123D /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F50BE2538D2FC00D7123D /* DrawingApp.swift */; };
 		3B8F50C12538D2FC00D7123D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F50C02538D2FC00D7123D /* ContentView.swift */; };
 		3B8F50C32538D2FD00D7123D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F50C22538D2FD00D7123D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		3B54D837253CBD15002926F8 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		3B54D83D253CBDAE002926F8 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		3B54D840253CC702002926F8 /* FlowerShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShapeView.swift; sourceTree = "<group>"; };
 		3B8F50BB2538D2FC00D7123D /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F50BE2538D2FC00D7123D /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		3B8F50C02538D2FC00D7123D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 				3B8F50C02538D2FC00D7123D /* ContentView.swift */,
 				3B54D837253CBD15002926F8 /* TriangleView.swift */,
 				3B54D83D253CBDAE002926F8 /* ArcView.swift */,
+				3B54D840253CC702002926F8 /* FlowerShapeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				3B54D83E253CBDAE002926F8 /* ArcView.swift in Sources */,
 				3B54D838253CBD15002926F8 /* TriangleView.swift in Sources */,
 				3B8F50BF2538D2FC00D7123D /* DrawingApp.swift in Sources */,
+				3B54D841253CC702002926F8 /* FlowerShapeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
