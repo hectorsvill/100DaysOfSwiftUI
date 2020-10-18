@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
-        trianglePath()
+        NavigationView {
+            List {
+                NavigationLink("Triangle Path", destination: trianglePath())
+                NavigationLink("Triangle View", destination: TriangleView())
+                NavigationLink("Arc View", destination: ArcView())
+                NavigationLink("Flower Shape View", destination: FlowerShapeView())
+                NavigationLink("Color Cycling Circle View", destination: ColorCyclingCircleView())
+            }
+            
+            .navigationTitle("Drawing")
+        }
+        
+        
     }
     
     func trianglePath() -> some View {

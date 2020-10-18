@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FlowerShape: Shape {
+fileprivate struct FlowerShape: Shape {
     // How much to move this petal away from the center
     var petalOffset: Double = -20
     

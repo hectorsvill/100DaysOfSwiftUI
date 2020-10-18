@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Arc: InsettableShape {
+fileprivate struct Arc: InsettableShape {
     var startAngle: Angle
     var endAngle: Angle
     var clockwise: Bool

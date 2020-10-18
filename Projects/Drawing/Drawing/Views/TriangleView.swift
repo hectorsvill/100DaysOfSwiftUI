@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TriangleShape: Shape {
+fileprivate struct TriangleShape: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
@@ -22,12 +22,24 @@ struct TriangleShape: Shape {
 
 struct TriangleView: View {
     var body: some View {
-        TriangleShape()
-            .stroke(
-                Color.green,
-                style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
-            )
-            .frame(width: 200, height: 200)
+        VStack {
+            ScrollView {
+                TriangleShape()
+                    .stroke(
+                        Color.green,
+                        style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round)
+                    )
+                    .frame(width: 200, height: 200)
+                
+                Text("""
+                    TriangleShape()
+                        .stroke(Color.green, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                        .frame(width: 200, height: 200)
+                    
+                    """)
+            }
+        }
+        
     }
 }
 
