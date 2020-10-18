@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B54D838253CBD15002926F8 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D837253CBD15002926F8 /* TriangleView.swift */; };
+		3B54D83E253CBDAE002926F8 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D83D253CBDAE002926F8 /* ArcView.swift */; };
 		3B8F50BF2538D2FC00D7123D /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F50BE2538D2FC00D7123D /* DrawingApp.swift */; };
 		3B8F50C12538D2FC00D7123D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F50C02538D2FC00D7123D /* ContentView.swift */; };
 		3B8F50C32538D2FD00D7123D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F50C22538D2FD00D7123D /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B54D837253CBD15002926F8 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		3B54D83D253CBDAE002926F8 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		3B8F50BB2538D2FC00D7123D /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F50BE2538D2FC00D7123D /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		3B8F50C02538D2FC00D7123D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B54D83A253CBD4B002926F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F50C02538D2FC00D7123D /* ContentView.swift */,
+				3B54D837253CBD15002926F8 /* TriangleView.swift */,
+				3B54D83D253CBDAE002926F8 /* ArcView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3B8F50B22538D2FC00D7123D = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8F50BE2538D2FC00D7123D /* DrawingApp.swift */,
-				3B8F50C02538D2FC00D7123D /* ContentView.swift */,
+				3B54D83A253CBD4B002926F8 /* Views */,
 				3B8F50C22538D2FD00D7123D /* Assets.xcassets */,
 				3B8F50C72538D2FD00D7123D /* Info.plist */,
 				3B8F50C42538D2FD00D7123D /* Preview Content */,
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8F50C12538D2FC00D7123D /* ContentView.swift in Sources */,
+				3B54D83E253CBDAE002926F8 /* ArcView.swift in Sources */,
+				3B54D838253CBD15002926F8 /* TriangleView.swift in Sources */,
 				3B8F50BF2538D2FC00D7123D /* DrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
