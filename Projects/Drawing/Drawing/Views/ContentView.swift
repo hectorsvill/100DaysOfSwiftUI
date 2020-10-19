@@ -19,7 +19,8 @@ struct ContentView: View {
                 NavigationLink("Special Effects View", destination: SpecialEffectsView())
                 NavigationLink("Image Blur View", destination: ImageBlurView())
                 NavigationLink("Trapezoid View View", destination: TrapezoidView())
-                
+                NavigationLink("Checker board View", destination: CheckerboardView())
+                NavigationLink("Spiro Graph View", destination: SpiroGraphView())
             }
             
             .navigationTitle("Drawing")
