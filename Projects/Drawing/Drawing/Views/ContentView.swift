@@ -16,6 +16,9 @@ struct ContentView: View {
                 NavigationLink("Arc View", destination: ArcView())
                 NavigationLink("Flower Shape View", destination: FlowerShapeView())
                 NavigationLink("Color Cycling Circle View", destination: ColorCyclingCircleView())
+                NavigationLink("Special Effects View", destination: SpecialEffectsView())
+                NavigationLink("Image Blur View", destination: ImageBlurView())
+                
             }
             
             .navigationTitle("Drawing")
