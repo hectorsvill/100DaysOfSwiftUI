@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B50FF42253E15C700A7068A /* SpecialEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50FF41253E15C700A7068A /* SpecialEffectsView.swift */; };
 		3B50FF49253E2E7400A7068A /* ImageBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50FF48253E2E7400A7068A /* ImageBlurView.swift */; };
+		3B50FF4C253E2F7400A7068A /* TrapezoidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50FF4B253E2F7400A7068A /* TrapezoidView.swift */; };
 		3B54D838253CBD15002926F8 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D837253CBD15002926F8 /* TriangleView.swift */; };
 		3B54D83E253CBDAE002926F8 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D83D253CBDAE002926F8 /* ArcView.swift */; };
 		3B54D841253CC702002926F8 /* FlowerShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54D840253CC702002926F8 /* FlowerShapeView.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		3B50FF41253E15C700A7068A /* SpecialEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffectsView.swift; sourceTree = "<group>"; };
 		3B50FF48253E2E7400A7068A /* ImageBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlurView.swift; sourceTree = "<group>"; };
+		3B50FF4B253E2F7400A7068A /* TrapezoidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapezoidView.swift; sourceTree = "<group>"; };
 		3B54D837253CBD15002926F8 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		3B54D83D253CBDAE002926F8 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		3B54D840253CC702002926F8 /* FlowerShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerShapeView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				3B54D83D253CBDAE002926F8 /* ArcView.swift */,
 				3B54D840253CC702002926F8 /* FlowerShapeView.swift */,
 				3B54D844253CCDA3002926F8 /* ColorCyclingCircleView.swift */,
+				3B50FF4B253E2F7400A7068A /* TrapezoidView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				3B8F50C12538D2FC00D7123D /* ContentView.swift in Sources */,
 				3B50FF49253E2E7400A7068A /* ImageBlurView.swift in Sources */,
 				3B54D83E253CBDAE002926F8 /* ArcView.swift in Sources */,
+				3B50FF4C253E2F7400A7068A /* TrapezoidView.swift in Sources */,
 				3B54D838253CBD15002926F8 /* TriangleView.swift in Sources */,
 				3B50FF42253E15C700A7068A /* SpecialEffectsView.swift in Sources */,
 				3B8F50BF2538D2FC00D7123D /* DrawingApp.swift in Sources */,

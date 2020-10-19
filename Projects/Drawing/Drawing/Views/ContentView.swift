@@ -18,6 +18,7 @@ struct ContentView: View {
                 NavigationLink("Color Cycling Circle View", destination: ColorCyclingCircleView())
                 NavigationLink("Special Effects View", destination: SpecialEffectsView())
                 NavigationLink("Image Blur View", destination: ImageBlurView())
+                NavigationLink("Trapezoid View View", destination: TrapezoidView())
                 
             }
             
