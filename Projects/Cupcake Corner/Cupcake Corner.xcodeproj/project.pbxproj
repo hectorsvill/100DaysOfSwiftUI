@@ -11,6 +11,7 @@
 		3B11C3AB2540FEDF00FFA3E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B11C3AA2540FEDF00FFA3E3 /* ContentView.swift */; };
 		3B11C3AD2540FEE000FFA3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B11C3AC2540FEE000FFA3E3 /* Assets.xcassets */; };
 		3B11C3B02540FEE000FFA3E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B11C3AF2540FEE000FFA3E3 /* Preview Assets.xcassets */; };
+		3B11C3B92541035800FFA3E3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B11C3B82541035800FFA3E3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3B11C3AC2540FEE000FFA3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B11C3AF2540FEE000FFA3E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B11C3B12540FEE000FFA3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B11C3B82541035800FFA3E3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				3B11C3A82540FEDF00FFA3E3 /* Cupcake_CornerApp.swift */,
-				3B11C3AA2540FEDF00FFA3E3 /* ContentView.swift */,
+				3B11C3BB2541036100FFA3E3 /* Models */,
+				3B11C3BD2541036A00FFA3E3 /* Views */,
 				3B11C3AC2540FEE000FFA3E3 /* Assets.xcassets */,
 				3B11C3B12540FEE000FFA3E3 /* Info.plist */,
 				3B11C3AE2540FEE000FFA3E3 /* Preview Content */,
@@ -67,6 +70,22 @@
 				3B11C3AF2540FEE000FFA3E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B11C3BB2541036100FFA3E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B11C3B82541035800FFA3E3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B11C3BD2541036A00FFA3E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B11C3AA2540FEDF00FFA3E3 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				3B11C3AB2540FEDF00FFA3E3 /* ContentView.swift in Sources */,
 				3B11C3A92540FEDF00FFA3E3 /* Cupcake_CornerApp.swift in Sources */,
+				3B11C3B92541035800FFA3E3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
