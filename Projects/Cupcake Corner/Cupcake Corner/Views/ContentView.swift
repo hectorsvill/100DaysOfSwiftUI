@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var username = ""
+    @State private var email = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Form {
+            
+        }
+        
     }
 }
 

@@ -12,6 +12,7 @@ struct Cupcake_CornerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            ItunesSearchView()
         }
     }
 }
