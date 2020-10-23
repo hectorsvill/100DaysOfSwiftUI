@@ -30,7 +30,21 @@ class Order: ObservableObject {
     @Published var city = ""
     @Published var zip = ""
     
-    
+    var cost: Double {
+        var cost = Double(quantity) * 2
+        cost += (Double(type) / 2)
+        
+        if extraFrosting {
+            cost += Double(quantity)
+        }
+        
+        if addSprinkles {
+            cost += Double(quantity) / 2
+        }
+        
+        return cost
+    }
+        
     var hasValidAddress: Bool {
         if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
             return false
