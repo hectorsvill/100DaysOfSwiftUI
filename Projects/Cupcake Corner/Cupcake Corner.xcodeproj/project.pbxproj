@@ -16,6 +16,7 @@
 		3B11C3C3254110C100FFA3E3 /* ItunesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B11C3C2254110C100FFA3E3 /* ItunesSearchView.swift */; };
 		3B2E1F4E25429BBE00E2B076 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E1F4D25429BBE00E2B076 /* Order.swift */; };
 		3B2E1F5125429E3400E2B076 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E1F5025429E3400E2B076 /* AddressView.swift */; };
+		3B2E1F5425429F1D00E2B076 /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E1F5325429F1D00E2B076 /* CheckOutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3B11C3C2254110C100FFA3E3 /* ItunesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSearchView.swift; sourceTree = "<group>"; };
 		3B2E1F4D25429BBE00E2B076 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		3B2E1F5025429E3400E2B076 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		3B2E1F5325429F1D00E2B076 /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				3B11C3AA2540FEDF00FFA3E3 /* ContentView.swift */,
 				3B11C3C2254110C100FFA3E3 /* ItunesSearchView.swift */,
 				3B2E1F5025429E3400E2B076 /* AddressView.swift */,
+				3B2E1F5325429F1D00E2B076 /* CheckOutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				3B11C3A92540FEDF00FFA3E3 /* Cupcake_CornerApp.swift in Sources */,
 				3B11C3C0254108E900FFA3E3 /* Result.swift in Sources */,
 				3B11C3C3254110C100FFA3E3 /* ItunesSearchView.swift in Sources */,
+				3B2E1F5425429F1D00E2B076 /* CheckOutView.swift in Sources */,
 				3B11C3B92541035800FFA3E3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
