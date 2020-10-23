@@ -29,7 +29,7 @@ struct ItunesSearchView: View {
     }
     
     func loadData() {
-        guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
+        guard let url = URL(string: "https://itunes.apple.com/search?term=the+office&entity=tvEpisode&limit=138") else {
             print("Invalid URL")
             return
         }
@@ -42,6 +42,8 @@ struct ItunesSearchView: View {
                 
                 DispatchQueue.main.async {
                     self.results = decodedResponse.results
+                    
+                    print(results.count)
                 }
                 
                 return
