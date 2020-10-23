@@ -43,7 +43,7 @@
 - technique project
     - Use shapes, paths, colors, and more to create custom art for your app
 
-##### Project 9: [Cupcake Corner](https://www.hackingwithswift.com/books/ios-swiftui/cupcake-corner-introduction)
+##### Project 10: [Cupcake Corner](https://www.hackingwithswift.com/books/ios-swiftui/cupcake-corner-introduction)
 - [Cupcake Corner]()
 - multi-screen app for ordering cupcakes
     - `Codable`, `@Published`, `UserDefaults` 
