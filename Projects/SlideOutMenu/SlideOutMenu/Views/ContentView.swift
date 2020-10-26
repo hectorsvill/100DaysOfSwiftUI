@@ -34,6 +34,8 @@ struct ContentView: View {
                 Spacer()
 
             }.padding()
+            
+            MenuView(viewIsOpen: $menuViewIsOpen)
         }
     }
 }
