@@ -44,12 +44,16 @@
     - Use shapes, paths, colors, and more to create custom art for your app
 
 ##### Project 10: [Cupcake Corner](https://www.hackingwithswift.com/books/ios-swiftui/cupcake-corner-introduction)
-- [Cupcake Corner]()
+- [Cupcake Corner](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/Cupcake%20Corner/Cupcake%20Corner)
 - multi-screen app for ordering cupcakes
     - `Codable`, `@Published`, `UserDefaults` 
 
-
 #
+
+##### Slide Out Menu
+ - [Slide Out Menu](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/SlideOutMenu/SlideOutMenu/Views)
+- Animated slide out menu with selected rows 
+
 # YT Tutorials
 
 Tutorials on SwiftUI from youtube
@@ -58,3 +62,4 @@ Tutorials on SwiftUI from youtube
 - [SwiftUILifeCycle](https://github.com/hectorsvill/100DaysOfSwiftUI/tree/master/Projects/SwiftUILifeCycle)
     - UIApplicationDelegateAdaptor and Environment scene phase
     - Access the app delegate and scene delegate from main struct 
+
